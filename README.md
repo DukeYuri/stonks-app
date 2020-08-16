@@ -1,2 +1,2 @@
-# stonks-app
+# Stonks
 Stonks - тиндер для инвесторов 
