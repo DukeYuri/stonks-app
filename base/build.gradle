@@ -41,5 +41,6 @@ dependencies {
     /*Support*/
     api deps.support.compat
     api deps.support.design
+    api deps.constraint
 
 }

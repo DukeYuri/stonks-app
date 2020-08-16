@@ -1,3 +1,4 @@
 include ':app',
-        ':base'
+        ':base',
+        ':main'
 rootProject.name = "Stonks"
