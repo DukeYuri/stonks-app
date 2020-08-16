@@ -1,0 +1,30 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.android_gradle_plugin = "4.0.1"
+versions.kotlin = "1.3.72"
+versions.ktx="1.3.1"
+versions.support="1.2.0"
+versions.material="1.2.0"
+
+def kotlin = [:]
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+deps.kotlin = kotlin
+
+def support = [:]
+support.compat = "androidx.appcompat:appcompat:$versions.support"
+support.design = "com.google.android.material:material:$versions.material"
+deps.support = support
+
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+deps.ktx = "androidx.core:core-ktx:$versions.ktx"
+
+ext.deps = deps
+
+static def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+}
+
+ext.addRepos = this.&addRepos
