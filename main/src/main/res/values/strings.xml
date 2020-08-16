@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_portfolio">Portfolio</string>
+    <string name="menu_feed">Feed</string>
+    <string name="menu_rating">Rating</string>
+</resources>
